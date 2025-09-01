@@ -18,7 +18,7 @@ const handleSubmit = async (e) => {
   try {
     const endpoint = isLogin ? "login" : "register";
     const data = { username, password };
-    const response = await api.post(`api/auth/${endpoint}`, data);
+    const response = await api.post(`/auth/${endpoint}`, data);
     console.log("Response:", response.data);
     setMessage(response.data.message || "Success!");
 
