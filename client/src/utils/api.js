@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_BACKEND_URL,
+  baseURL: "https://mood-diary-g3gd.onrender.com/api",
 });
 
 export default api;
